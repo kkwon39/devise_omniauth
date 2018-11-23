@@ -23,11 +23,11 @@ Things you may want to cover:
 
 * ...
 
-**Steps
+# Steps
 
-* 1: create a set of pages: rails g controller Pages home
+* 1: Create a set of pages: rails g controller Pages home
 
-* 2: set the routes accordingly: config/routes, root to: 'pages#home'
+* 2: Set the routes accordingly: config/routes, root to: 'pages#home'
 
 * 3: Implement devise: Add Gemfile, bundle install, rails g devise:install, rails g devise:views
 
@@ -37,7 +37,7 @@ Things you may want to cover:
 
 * 6: Rails g migration AddOmniauthTo Users provider:string uid:string name:string image:text
 
-* 7: update initializer: config.omniauth:facebook, "APP_ID", "APP_SECRET"
+* 7: Update initializer: config.omniauth:facebook, "APP_ID", "APP_SECRET"
 
 * 8: Links to get client_id and client_secret
 
