@@ -46,7 +46,7 @@ Things you may want to cover:
      https://developer.twitter.com
      https://github.com/settings/application
 
-* 9: Keep in mind that emails have to be unique per user, meaning if a user has logged in with one of the sns services already, he can't log in same email using another sns service
+* 9: Keep in mind that emails have to be unique per user, meaning if a user has logged in with one of the sns services already, he can't log in with the same email using another sns service
 
 * omniauth:
   facebook:
