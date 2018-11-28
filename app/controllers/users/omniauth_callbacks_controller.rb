@@ -1,9 +1,9 @@
 # app/controller/users/omniauth_callbacks_controller.rb
 
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+
   def facebook
     @user = User.from_omniauth(request.env["omniauth.auth"])
-
     if @user.persisted?
       sign_in_and_redirect @user, :event => :authentication
       set_flash_message(:notice, :success, :kind => "Facebook") if is_navigational_format?
@@ -42,6 +42,17 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       set_flash_message(:notice, :success, :kind => "Github") if is_navigational_format?
     else
       session["devise.github_data"] = request.env["omniauth.auth"]
+    end
+    redirect_to root_path
+  end
+
+  def instagram
+    @user = User.from_omniauth(request.env["omniauth.auth"])
+    if @user.persisted?
+      sign_in @user, :event => :authentication
+      set_flash_message(:notice, :success, :kind => "Instagram") if is_navigational_format?
+    else
+      session["devise.instagram_data"] = request.env["omniauth.auth"]
     end
     redirect_to root_path
   end
