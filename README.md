@@ -21,7 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
 
 # Steps
 
@@ -45,9 +44,8 @@ Things you may want to cover:
      https://console.developers.google.com
      https://developer.twitter.com
      https://github.com/settings/application
-     https://www.instagram.com/developer/clients/manage (no messagin api)
-     https://developers.snapchat.com/api/docs (no omniauth + messaging api)
-     https://www.youtube.com/watch?v=Zb8YWXlXo-k (facebook page access token tutorial)
+     https://www.instagram.com/developer/clients/manage
+     https://developers.snapchat.com/api/docs
 
 * 9: Keep in mind that emails have to be unique per user, meaning if a user has logged in with one of the sns services already, he can't log in with the same email using another sns service
 
